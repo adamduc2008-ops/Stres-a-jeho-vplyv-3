@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zvládanie stresu a zdravý životný štýl</title>
+
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --secondary: #1b5e20;
+      --light: #f4f6f8;
+      --card: #ffffff;
+      --warning: #fff3e0;
+      --text: #1f2933;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #eef5f2, #ffffff);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.6rem;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: 1rem auto 0;
+      font-size: 1.15rem;
+      opacity: 0.95;
+    }
+
+    nav {
+      background: var(--secondary);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: var(--card);
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+
+    section h3 {
+      color: var(--secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: #fafafa;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 6px solid var(--primary);
+    }
+
+    .warning {
+      background: var(--warning);
+      border-left: 6px solid #ff9800;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-top: 1.5rem;
+    }
+
+    footer {
+      background: #e0e0e0;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Zvládanie stresu</h1>
+    <p>
+      Prehľadná a praktická stránka o tom, ako sa starať o svoje psychické
+      aj fyzické zdravie v každodennom živote.
+    </p>
+  </header>
+
+  <nav>
+    <a href="#stres">Čo je stres</a>
+    <a href="#priznaky">Príznaky</a>
+    <a href="#trening">Pohyb a tréning</a>
+    <a href="#techniky">Techniky zvládania</a>
+    <a href="#zivot">Životný štýl</a>
+    <a href="#pomoc">Pomoc</a>
+  </nav>
+
+  <main>
+
+    <section id="stres">
+      <h2>🧠 Čo je stres</h2>
+      <p>
+        Stres je prirodzená reakcia tela na záťažové situácie. V primeranej miere
+        nám pomáha zvládať výzvy, no dlhodobý stres môže negatívne ovplyvniť
+        psychické aj fyzické zdravie.
+      </p>
+      <p>
+        Cieľom nie je stres úplne odstrániť, ale naučiť sa ho rozpoznať a
+        efektívne zvládať.
+      </p>
+    </section>
+
+    <section id="priznaky">
+      <h2>⚠️ Príznaky stresu</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Psychické</h3>
+          <ul>
+            <li>Úzkosť a podráždenosť</li>
+            <li>Problémy so sústredením</li>
+            <li>Pocit preťaženia</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Fyzické</h3>
+          <ul>
+            <li>Bolesť hlavy alebo žalúdka</li>
+            <li>Únava</li>
+            <li>Búšenie srdca</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Správanie</h3>
+          <ul>
+            <li>Prokrastinácia</li>
+            <li>Izolácia</li>
+            <li>Zmeny chuti do jedla</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="trening">
+      <h2>🏃 Pohyb a tréning</h2>
+      <p>
+        Pravidelný pohyb výrazne pomáha znižovať hladinu stresu a zlepšuje náladu.
+      </p>
+      <ul>
+        <li>Chôdza alebo bicykel aspoň 30 minút denne</li>
+        <li>Silový tréning 2–3× týždenne</li>
+        <li>Strečing alebo joga</li>
+      </ul>
+      <p>
+        Dôležitá je pravidelnosť, nie extrémny výkon.
+      </p>
+    </section>
+
+    <section id="techniky">
+      <h2>🧘 Techniky zvládania stresu</h2>
+      <ul>
+        <li>Hlboké dýchanie (4–4–6)</li>
+        <li>Krátke prestávky počas dňa</li>
+        <li>Mindfulness a sústredenie sa na prítomnosť</li>
+        <li>Počúvanie hudby alebo zvukov prírody</li>
+      </ul>
+    </section>
+
+    <section id="zivot">
+      <h2>🥗 Zdravý životný štýl</h2>
+      <ul>
+        <li>Pravidelný spánok (7–9 hodín)</li>
+        <li>Vyvážená strava</li>
+        <li>Dostatočný pitný režim</li>
+        <li>Obmedzenie sociálnych sietí</li>
+        <li>Rovnováha medzi školou a oddychom</li>
+      </ul>
+    </section>
+
+    <section id="pomoc">
+      <h2>🆘 Kde hľadať pomoc</h2>
+      <ul>
+        <li>Rodina a priatelia</li>
+        <li>Školský psychológ alebo poradca</li>
+        <li>Praktický lekár</li>
+        <li>Linky dôvery (anonymné a zdarma)</li>
+      </ul>
+
+      <div class="warning">
+        <strong>
+          Ak sa cítiš dlhodobo zle alebo ohrozený, vyhľadaj odbornú pomoc.
+          Požiadať o pomoc nie je slabosť.
+        </strong>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 – Edukačný projekt | Zvládanie stresu</p>
+  </footer>
+
+</body>
+</html>
